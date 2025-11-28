@@ -4,7 +4,7 @@ const db = Database("./data/database.sqlite");
 
 db.prepare(
   `CREATE TABLE IF NOT EXISTS cars(
-    id INTEGER AUTOINCREMENT,
+    id INTEGER PRIMARY KEY  AUTOINCREMENT,
     brand TEXT,
     color TEXT,
     lplate TEXT)`
